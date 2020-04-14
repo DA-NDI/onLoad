@@ -1,26 +1,27 @@
 <html>
     <head>
-    <script type="text/javascript">
-    const linkElement = document.getElementById("ar-link");
-    linkElement.addEventListener("message", OnTap, false);
-  
- function OnTap(event)
- {   
-    if (event.data == "_apple_ar_quicklook_button_tapped")
-    {
-      console.log("Button tapped!");
-      window.location.assign("https://www.championchair.com/wp-content/uploads/2019/06/Alo_SpecSheet_REV02.pdf");
-    }
- }
-
-    function load()
-    {
-        document.getElementById('ar-link').click()
-    }
-    </script>
-    <a href="https://marketscale.com/wp-content/uploads/web-ar/Alo/Alo_v03_fbx_text.reality#custom=https://marketscale.com/wp-content/uploads/web-ar/Alo/banner.html" rel="ar" id="ar-link">
+        <a href="https://marketscale.com/wp-content/uploads/web-ar/Alo/Alo_v03_fbx_text.reality#custom=https://marketscale.com/wp-content/uploads/web-ar/Alo/banner.html" rel="ar" id="ar-link">
         <img />
-    </a>
+        </a>
+    <script type="text/javascript">
+        const linkElement = document.getElementById("ar-link");
+        linkElement.addEventListener("message", OnTap, false);
+  
+        function OnTap(event)
+        {   
+            if (event.data == "_apple_ar_quicklook_button_tapped")
+            {
+                console.log("Button tapped!");
+                window.location.assign("https://www.championchair.com/wp-content/uploads/2019/06/Alo_SpecSheet_REV02.pdf");
+            }
+        }
+
+        function load()
+        {
+            document.getElementById('ar-link').click()
+        }
+    </script>
+
     </head>
     <body onload="load()">
     </body>
