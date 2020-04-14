@@ -1,18 +1,8 @@
 <html>
     <head>
     <script type="text/javascript">
-    function load()
-    {
-        document.getElementById('myLink').click()
-    }
-    </script>
-    <a href="https://marketscale.com/wp-content/uploads/web-ar/Alo/Alo_v03_fbx_text.reality#custom=https://marketscale.com/wp-content/uploads/web-ar/Alo/banner.html" rel="ar" id="ar-link">
-        <img />
-    </a>
-    </head>
-<script type="text/javascript">
     const linkElement = document.getElementById("ar-link");
-linkElement.addEventListener("message", OnTap, false);
+    linkElement.addEventListener("message", OnTap, false);
   
  function OnTap(event)
  {   
@@ -22,8 +12,16 @@ linkElement.addEventListener("message", OnTap, false);
       window.location.assign("https://www.championchair.com/wp-content/uploads/2019/06/Alo_SpecSheet_REV02.pdf");
     }
  }
-  </script>
-  <script></script>
+
+    function load()
+    {
+        document.getElementById('myLink').click()
+    }
+    </script>
+    <a href="https://marketscale.com/wp-content/uploads/web-ar/Alo/Alo_v03_fbx_text.reality#custom=https://marketscale.com/wp-content/uploads/web-ar/Alo/banner.html" rel="ar" id="ar-link">
+        <img />
+    </a>
+    </head>
     <body onload="load()">
     </body>
 </html>
